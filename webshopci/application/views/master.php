@@ -52,11 +52,11 @@
 					<a href="index.html" class="logo pull-left"><img src="<?php echo base_url()?>themes/images/logo.png" class="site_logo" alt=""></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="./products.html">Woman</a>					
+							<li><a href="#">Management</a>					
 								<ul>
-									<li><a href="./products.html">Lacinia nibh</a></li>									
-									<li><a href="./products.html">Eget molestie</a></li>
-									<li><a href="./products.html">Varius purus</a></li>									
+									<li><a href="<?php echo base_url()?>index.php/product-management">Product</a></li>	
+									<li><a href="<?php echo base_url()?>category-management">Category</a></li>	
+									<li><a href="<?php echo base_url()?>subcategory-management">Sub Category</a></li>									
 								</ul>
 							</li>															
 							<li><a href="./products.html">Man</a></li>			
@@ -73,6 +73,27 @@
 						</ul>
 					</nav>
 				</div>
+			</section>
+			<section  class="homepage-slider" id="home-slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="themes/images/carousel/banner-1.jpg" alt="" />
+						</li>
+						<li>
+							<img src="themes/images/carousel/banner-2.jpg" alt="" />
+							<div class="intro">
+								<h1>Mid season sale</h1>
+								<p><span>Up to 50% Off</span></p>
+								<p><span>On selected items online and in stores</span></p>
+							</div>
+						</li>
+					</ul>
+				</div>			
+			</section>
+			<section class="header_text">
+				We stand for top quality templates. Our genuine developers always optimized bootstrap commercial templates. 
+				<br/>Don't miss to use our cheap abd best bootstrap templates.
 			</section>
 			
 
