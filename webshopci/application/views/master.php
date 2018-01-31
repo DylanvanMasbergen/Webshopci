@@ -110,7 +110,7 @@
 					<div class="span3">
 						<h4>Navigatie</h4>
 						<ul class="nav">
-							<li><a href="#">Homepagina</a></li>  
+							<li><a href="<?php echo base_url()?>">Homepagina</a></li>  
 							<li><a href="#">over ons</a></li>
 							<li><a href="#">Contact</a></li>
 							<li><a href="#">Jou winkelwagen</a></li>

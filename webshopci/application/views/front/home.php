@@ -192,7 +192,7 @@
 								<div class="service">
 									<div class="customize">			
 										<img src="themes/images/feature_img_1.png" alt="" />
-										<h4>FREE <strong>SHIPPING</strong></h4>
+										<h4>GRATIS <strong>VERZENDING</strong></h4>
 										<p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>
 									</div>
 								</div>
@@ -201,8 +201,8 @@
 								<div class="service">
 									<div class="support">	
 										<img src="themes/images/feature_img_3.png" alt="" />
-										<h4>24/7 LIVE <strong>SUPPORT</strong></h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>
+										<h4>24/7 LIVE <strong>CONTACT</strong></h4>
+										<p>Voor vragen en informatie.</p>
 									</div>
 								</div>
 							</div>	
