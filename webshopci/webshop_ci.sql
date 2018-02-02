@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 02 feb 2018 om 11:18
+-- Gegenereerd op: 02 feb 2018 om 11:25
 -- Serverversie: 5.7.14
 -- PHP-versie: 5.6.25
 
@@ -19,6 +19,19 @@ SET time_zone = "+00:00";
 --
 -- Database: `webshop ci`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `amount` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -109,9 +122,28 @@ INSERT INTO `unit` (`id`, `name`) VALUES
 (3, 'Liter'),
 (4, 'GM');
 
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `address` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
 --
 -- Indexen voor geëxporteerde tabellen
 --
+
+--
+-- Indexen voor tabel `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexen voor tabel `category`
@@ -143,9 +175,20 @@ ALTER TABLE `unit`
   ADD UNIQUE KEY `name` (`name`);
 
 --
+-- Indexen voor tabel `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
+--
+-- AUTO_INCREMENT voor een tabel `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT voor een tabel `category`
 --
@@ -166,6 +209,11 @@ ALTER TABLE `subcategory`
 --
 ALTER TABLE `unit`
   MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT voor een tabel `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
